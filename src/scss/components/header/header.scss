@@ -1,0 +1,155 @@
+.logo {
+  display: block;
+  width: 110px;
+}
+
+.main-header__logo {
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.cite-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cite-nav__item {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.cite-nav__link {
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+
+  color: rgba(31, 32, 65, 0.5);
+  text-decoration: none;
+}
+
+.cite-nav__link--select::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 15px;
+  height: 10px;
+  top: 5px;
+  right: -18px;
+
+  background: url('../img/on-select.png') no-repeat;
+}
+
+.user-block__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.user-block__link--login {
+  display: block;
+  width: 87px;
+  margin: 0 auto;
+  margin-top: 15px;
+  padding: 7px 0;
+  text-align: center;
+  border: 2px solid #BC9CFF;
+  border-radius: 22px;
+
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #BC9CFF;
+}
+
+.user-block__link--sign-up {
+  display: block;
+  width: 196px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 5px;
+  padding: 8px 15px;
+  text-decoration: none;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 22px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+@media (min-width: 600px) {
+  .main-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 5%; //10
+  }    
+
+  .main-header__logo {
+    margin: 0;
+    margin-top: 10px;
+  }
+
+  .main-header__cite-nav {
+    margin-left: auto; //37
+  }
+
+  .cite-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cite-nav__link {
+    margin-right: 10px;
+  }
+
+  .cite-nav__link--select {
+    margin-right: 25px;
+  }
+
+  .user-block {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: auto;
+  }
+
+  .user-block__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .user-block__item {
+    margin-right: 10px;
+  }
+
+  .user-block__link--login {
+    margin-top: 5px;
+  }
+}
+
+@media (min-width: 900px) {
+  .main-header__logo {
+    margin-right: 15%;
+  }
+
+  .cite-nav__item {
+    width: auto;
+    margin-left: 20px;
+  }
+
+  .user-block__list {
+    margin-top: 5px;
+  }
+}
