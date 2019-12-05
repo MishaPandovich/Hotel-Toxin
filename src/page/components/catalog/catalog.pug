@@ -2,8 +2,7 @@ main.catalog-page
   include ../sidebar/sidebar.pug
   section.catalog
     h2.catalog__title Номера, которые мы для вас подобрали
-    ul.catalog__list
-      li.catalog__item
+    ul.cards
     div.page-number.catalog__page-number
       ul.page-number__list
         li.page-number__item
@@ -20,35 +19,33 @@ main.catalog-page
           a.page-number__link.page-number__link--next Next
       p.page-number__text 1-12 из 100+ вариантов аренды 
 
-  //- шаблон для блока (удобства номера)
-  template(id="card")
-    section.card-block
-      section.card-gallery
-        figure.card-gallery__content
-          a.card-gallery__link(href="#")
-            img.card-gallery__img(src="#" alt="#")
-          a.card-gallery__link(href="#")
-            img.card-gallery__img(src="#" alt="#")
-          a.card-gallery__link(href="#")
-            img.card-gallery__img(src="#" alt="#")
-          a.card-gallery__link(href="#")
-            img.card-gallery__img(src="#" alt="#")
-
-          button.bnt.card-gallery__bnt.card-gallery__bnt--prev(onclick="minusSlide()") &#10094;
-          button.bnt.card-gallery__bnt.card-gallery__bnt--next(onclick="plusSlide()") &#10095;
-          div.card-gallery__dots
-            span.card-gallery__dots-item(onclick="currentSlide(1)")
-            span.card-gallery__dots-item(onclick="currentSlide(2)")
-            span.card-gallery__dots-item(onclick="currentSlide(3)")
-        div.card-info
-          span.card-info__number-room №888 <span class="lux">люкс</span>
-          span.card-info__price 9990 <span class="currency">P</span><span>В сутки</span>
-          div.card-info__inner
-            div.card-info__rating
-              span.star-rating.star-rating--one
-              span.star-rating.star-rating--two
-              span.star-rating.star-rating--three
-              span.star-rating.star-rating--four
-              span.star-rating.star-rating--five
-            div.card-info__comments
-              a.card-info__comments-count 145 <span>отзывов</span>
+template(id="catalog-card")
+  li.card
+    div.card-slider
+      div.card-slider__item
+        a.card-slider__link(href="/mock-address/change-me")
+          img(src="#" alt="Первый слайд")
+      div.card-slider__item
+        a.card-slider__link(href="/mock-address/change-me")
+          img(src="#" alt="Второй слайд")
+      div.card-slider__item
+        a.card-slider__link(href="/mock-address/change-me")
+          img(src="#" alt="Третий слайд")
+      a.prev.card-slider__prev &#10094;
+      a.next.card-slider__next &#10095;
+      div.dots.card-slider__dots
+        span.dots__item
+        span.dots__item
+        span.dots__item
+    div.card-info
+      span.card-info__number-room №888 <span class="lux">люкс</span>
+      span.card-info__price 9990 <span class="currency">P</span><span>В сутки</span>
+      div.card-info__inner
+        div.card-info__rating
+          span.star-rating.star-rating--one
+          span.star-rating.star-rating--two
+          span.star-rating.star-rating--three
+          span.star-rating.star-rating--four
+          span.star-rating.star-rating--five
+        div.card-info__comments
+          a.card-info__comments-count 145 <span>отзывов</span>
