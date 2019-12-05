@@ -1,25 +1,21 @@
-main.container
+main.main-page.container
   section.search-rooms
     h2.search-rooms__title Найдем номера под ваши желания
+    div.date-picker.search-rooms__date-picker
+      label.date-picker__label Прибытие
+        input.date-picker__input(type="text" placeholder="ДД.ММ.ГГГГ")
+      label.date-picker__label Выезд
+        input.date-picker__input(type="text" placeholder="ДД.ММ.ГГГГ" readonly)
+    div.select-visitors.search-rooms__select-visitors
+      label.select-visitors__label Гости
+        input.select-visitors__input(type="text" placeholder="Сколько гостей" readonly)
+      div.select-visitors__block
+        div.select-visitors__inner
+        span.select-visitors__clear Очистить
+        span.select-visitors__close Выполнить
+    button.search-rooms__button Подобрать номер
 
-//- main.main-page
-//-   section.block-search-room.main-page__block-search-room
-//-     h2.block-search-room__title Найдем номера под ваши пожелания
-//-     div.datepicker
-//-       label.datepicker__label(for="datepicker") Прибытие
-//-         input.datepicker__input.datepicker-here(type="text" id="datepicker" placeholder="ДД.ММ.ГГГГ")
-//-       label.datepicker__label.datepicker__label--go(for="go") Выезд
-//-         input.datepicker__input.datepicker__input--go(id="go" placeholder="ДД.ММ.ГГГГ" readonly)
-//-     label.select-count-visitors__label(for="select-count") Гости
-//-       input.select-count-visitors__input(type="text" id="select-count" placeholder="Сколько гостей")
-//-     div.select-count-visitors
-//-       div.select-count-visitors__inner
-//-       span.select-count-visitors__clear Очистить
-//-       span.select-count-visitors__close Выполнить
-//-     button.block-search-room__button Подобрать номер
-
-//-   p.main-page__slogan Лучшие номера для вашей работы, <br>отдыха и просто вдохновения
-
+    p.main-page__slogan Лучшие номера для вашей работы, <br>отдыха и просто вдохновения
 //-   //- шаблон для блока выбора колич. людей вьезжающих в номер 
 //-   template(id="select-count-visitors")
 //-     div.select-count-visitors__option
