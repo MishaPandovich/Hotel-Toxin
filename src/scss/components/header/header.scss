@@ -1,4 +1,144 @@
-.logo {
+/*для сетки*/
+.header {
+  border: 1px solid red;
+
+  padding: 15px 0;
+}
+
+.logo-link {
+  display: block;
+  width: 105px;
+  height: 40px;
+}
+
+.header__logo-link {
+  /*для сетки*/
+  border: 1px solid red;
+  margin: auto; 
+  /*margin-top: 15px;
+  margin-bottom: 15px;*/
+}
+
+.nav-cite {
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
+  /*для сетки*/
+  border: 1px solid green;
+}
+
+.nav-cite__item {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.nav-cite__link {
+  text-decoration: none;
+  @include style-font-for-navigation();
+}
+
+.user-block {
+  border: 1px solid green;
+}
+
+.user-block__link {
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+  text-decoration: none;
+  @include general-style-font();
+}
+
+.user-block__link_login {
+  color: #BC9CFF;
+}
+
+.user-block__link_sign-up {
+  //color: #FFFFFF;
+}
+
+.user-block__link_hidden {
+  display: none;
+}
+
+@media (min-width: 450px) {
+  .header__logo-link {
+    display: inline-block;
+    margin-left: 0;
+  }
+
+  .nav-cite {
+    display: inline-block;
+  }
+
+  .nav-cite__item {
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  .nav-cite__item:nth-last-child(1) {
+    margin-right: 0px;
+  }
+
+  .user-block {
+    display: inline-block;
+  }
+
+  .user-block__link {
+    display: inline-block;
+    margin-right: 15px;
+  }
+  
+  .user-block__link_hidden {
+    display: none;
+  }
+
+  .user-block__link:nth-last-child(1) {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 615px) {
+  .header > .container {
+    padding: 0 9.7%;
+  }
+
+  .header__logo-link  {
+    margin-right: 9.7%;
+  }
+
+  .header__nav-cite {
+    vertical-align: top;
+  }
+}
+
+@media (min-width: 980px) {
+  .header > .container {
+    display: flex;
+    align-content: center;
+    align-items: center;
+
+    border: 1px solid red;
+  }
+
+  .user-block {
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header__logo-link  {
+    margin-right: 19.7%;
+  }
+
+  .user-block__link {
+    margin-top: 0px;
+  }
+}
+
+/*.logo {
   display: block;
   width: 110px;
 }
@@ -152,4 +292,4 @@
   .user-block__list {
     margin-top: 5px;
   }
-}
+}*/

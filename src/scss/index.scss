@@ -9,7 +9,11 @@
 //@import '../plugins/air-datapicker/css/datepicker.scss';
 // сделать что-то со стилями плагина
 
-body {
-	font-family: "Montserrat", sans-serif;
-	font-weight: 400;
-}
+
+@import 'components/normalize.scss';
+@import 'components/fonts.scss';
+@import 'components/mixins.scss';
+@import 'components/body.scss';
+@import 'components/header/header.scss';
+@import 'components/main/main.scss';
+@import 'components/footer/footer.scss';
