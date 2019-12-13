@@ -1,0 +1,35 @@
+.page-catalog-item__container {
+	display: flex;
+	flex-direction: column;
+}
+
+.column-left {
+	border: 1px solid green;
+}
+
+.column-right {
+	border: 1px solid red;
+	order: -1;
+}
+
+@media (min-width: 500px) {
+	.page-catalog-item__container {
+		margin: 0 7%;
+	}
+}
+
+@media (min-width: 615px) {
+	.page-catalog-item__container {
+		margin: 0 9.7%;
+	}
+}
+
+@media (min-width: 1050px) {
+	.page-catalog-item__container {
+		flex-direction: row;
+	}
+
+	.column-right {
+		order: 1;
+	}
+}

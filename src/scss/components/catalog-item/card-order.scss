@@ -1,0 +1,133 @@
+.order-card {
+	width: 90%;
+	max-width: 380px;
+	padding: 10px;
+	margin: 0 auto;
+	margin-top: 30px;
+	box-sizing: border-box;
+
+	border: 1px solid orange;
+}
+
+.order-card__inner {
+	border: 1px solid pink;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.order-card__number-room {
+	font-family: $font-for-title;
+	font-weight: 600;
+	font-size: 13px;
+	line-height: 15px;
+	color: #1F2041;
+}
+
+.number-room {
+	font-family: $general-font;
+	margin-left: 3px;
+	margin-right: 3px;
+	font-size: 17px;
+	line-height: 19px;
+}
+
+.order-card__status-room {
+	@include general-style-font();
+	color: #BC9CFF;
+}
+
+.price-value {
+	font-weight: 600;
+}
+
+.order-card__price {
+	font-family: $general-font;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 18px;
+	color: rgba(31, 32, 65, 0.5);
+}
+
+.order-card__label {
+	@include general-style-font();
+	color: #1F2041; 
+
+	width: 120px;
+	border: 1px solid red;
+}
+
+.order-card__input {
+	//max-width: 150px;
+	width: 100%;
+	padding: 6px 0;
+	padding-left: 15px;
+
+	font-family: $general-font;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+	
+	color: rgba(31, 32, 65, 0.75);
+
+	border: 1px solid rgba(31, 32, 65, 0.25);
+	box-sizing: border-box;
+	border-radius: 4px;
+}
+
+.select-visitors__label {
+	@include general-style-font();
+	color: #1F2041;
+}
+
+.select-visitors__input {
+	display: block;
+	// перевести потом в общее правило
+	width: 100%;
+	padding: 6px 0;
+	padding-left: 15px;
+
+	font-family: $general-font;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+	
+	color: rgba(31, 32, 65, 0.75);
+
+	border: 1px solid rgba(31, 32, 65, 0.25);
+	box-sizing: border-box;
+	border-radius: 4px;
+}
+
+.select-visitors__block {
+	display: none;
+}
+
+.final-count {
+	border: 1px solid orange;
+}
+
+.final-count__row {
+	display: flex;
+	justify-content: space-between;
+}
+
+.final-amount__row {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+	border: 1px solid green;
+}
+
+@media (min-width: 400px) {
+	.order-card {
+		padding: 30px;
+	}
+	.order-card__label {
+		width: 150px;
+	}
+}

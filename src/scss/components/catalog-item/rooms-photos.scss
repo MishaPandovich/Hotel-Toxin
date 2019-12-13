@@ -1,0 +1,64 @@
+.rooms-photos {
+	border: 1px solid red;
+}
+
+.rooms-photos__column {
+	border: 1px solid green;
+}
+
+.rooms-photos__img {
+	display: block;
+	border: 1px solid orange;
+	width: 100%;
+	height: 200px;
+}
+
+@media (min-width: 430px) {
+	.rooms-photos__img {
+		height: 250px;
+	}
+}
+
+@media (min-width: 550px) {	
+	.rooms-photos {
+		display: flex;
+		height: 350px;
+	}
+	
+	.rooms-photos__column_left {
+		order: 1;
+	}
+
+	.rooms-photos__img {
+		height: 50%;
+	}
+}
+
+@media (min-width: 700px) {
+	.rooms-photos {
+		height: 400px;
+	}
+}
+
+@media (min-width: 900px) {
+	.rooms-photos {
+		height: 485px;
+	}
+	
+	.rooms-photos__column_left {
+		order: 0;
+		width: 68%;
+	}
+
+	.rooms-photos__column_left .rooms-photos__img {
+		height: 100%;
+	}
+
+	.rooms-photos__column_right {
+		width: 32%;
+	}
+
+	.rooms-photos__column_right .rooms-photos__img {
+		height: 50%;
+	}
+}

@@ -1,0 +1,46 @@
+.room-info {
+	border: 1px solid yellow;
+}
+
+.room-info__title {
+  text-align: center;
+
+  font-family: $font-for-title;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 24px;
+
+  color: #1F2041;
+}
+
+.room-info__list {
+  border: 1px solid red;
+
+  display: block;
+  width: 270px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+
+  font-family: $general-font;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 24px;
+
+  color: rgba(31, 32, 65, 0.75);
+}
+
+@media (min-width: 700px) {
+  .room-info {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .statistic {
+    min-width: 280px;
+    height: 30px;
+
+    border: 1px solid orange;
+  } 
+}

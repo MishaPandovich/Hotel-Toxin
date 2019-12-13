@@ -9,7 +9,6 @@
 //@import '../plugins/air-datapicker/css/datepicker.scss';
 // сделать что-то со стилями плагина
 
-
 @import 'components/normalize.scss';
 @import 'components/fonts.scss';
 @import 'components/mixins.scss';
@@ -17,5 +16,11 @@
 @import 'components/header/header.scss';
 @import 'components/main/main.scss';
 @import 'components/catalog/catalog.scss';
+@import 'components/catalog-item/catalog-item.scss';
+@import 'components/catalog-item/rooms-photos.scss';
+@import 'components/catalog-item/card-order.scss';
+@import 'components/catalog-item/info-room.scss';
+@import 'components/catalog-item/comments.scss';
+@import 'components/catalog-item/ruls-room.scss';
 @import 'components/catalog/sidebar.scss';
 @import 'components/footer/footer.scss';

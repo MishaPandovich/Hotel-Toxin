@@ -3,6 +3,8 @@ html(lang="ru-RU")
   head
     title Toxin
   body
-    include components/header/header.pug
-    include components/catalog-item/catalog-item.pug
-    include components/footer/footer.pug
+    div.wrapper
+      div.content
+        include components/header/header.pug
+        include components/catalog-item/catalog-item.pug
+      include components/footer/footer.pug

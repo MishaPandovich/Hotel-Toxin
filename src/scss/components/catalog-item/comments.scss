@@ -1,0 +1,68 @@
+.comments {
+	border: 1px solid black;
+}
+
+.comments__inner {
+	border: 1px solid red;
+
+	text-align: center;
+}
+
+.comments__title {
+	font-family: $font-for-title;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 19px;
+	line-height: 24px;
+
+	color: #1F2041;
+}
+
+.comments__count {
+	display: block;
+	margin: 0 auto;
+}
+
+.comments__list {
+	margin: 0;
+	padding: 10px;
+	list-style: none;
+}
+
+.comments__column-top {
+	display: flex;
+
+	border: 1px dashed pink;
+}
+
+.comments__column-bottom {
+	border: 1px solid red;
+}
+
+.comments__column-right {
+	margin-left: 10px;
+}
+
+.user-pic {
+	border: 1px solid black;
+
+	width: 48px;
+	height: 48px;
+}
+
+.user-name {
+	margin: 0;
+}
+
+.time-add-comments {
+	margin-top: 5px;
+}
+
+.likes {
+	width: 50px;
+	margin-right: 15px;
+}
+
+.comments__column-bottom {
+	display: flex;
+}
