@@ -1,0 +1,39 @@
+.page-log-in {
+	background: pink;
+
+	border: 1px solid;// надо
+}
+
+.module {
+	background: #ffffff;
+	max-width: 380px;
+	margin: 0 auto;
+	margin-top: 10%;
+	margin-bottom: 10%;
+}
+
+.module__title {
+	margin: 0;
+}
+
+.module_hidden {
+	display: none;
+}
+
+@media (min-width: 1200px) {
+	.page-log-in {
+		min-height: 684px;
+		// перевести высоты в проценты
+		display: flex;
+		flex-direction: column;
+	}
+
+	.module {
+		margin: auto;
+	}
+
+	.module_hidden {
+		display: none;
+	}
+
+}
