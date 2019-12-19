@@ -1,22 +1,13 @@
+/*main-page*/
 .main-page {
-  border: 0.5px solid transparent;
-  background: orange;
+  border-top: 0.5px solid transparent;
+  border-bottom: 0.5px solid transparent;
+  background: url('../img/main-background.jpg') no-repeat;
+  background-size: cover;
 }
 
 .container {
   padding: 0 7%;
-}
-
-.search-rooms {
-  background: #ffffff;
-  margin-bottom: 15%;
-}
-
-.search-rooms__title {
-  @include style-font-for-title();
-  text-align: center;
-  font-size: 20px;
-  line-height: 28px;
 }
 
 .main-page__slogan {
@@ -26,22 +17,11 @@
   font-family: 400;
   color: rgba(31, 32, 65, 0.75);
   text-align: right;
-}
 
-@media (min-width: 450px) {
-  .search-rooms {
-    width: 380px;
-    margin-top: 4.8%;
-    //margin-left: 9.7%;
-    margin-bottom: 26.8%;
-  }
+  margin-bottom: 18px;
 }
 
 @media (min-width: 615px) {
-  .search-rooms {
-    margin-left: 2.7%; // 9.7
-  }
-
   .main-page__slogan {
     width: 297px;
     margin-left: auto;
@@ -49,41 +29,153 @@
     margin-bottom: 18px;
   }
 }
+/*main-page*/
 
-/*.main-page {
-  margin-top: 25px;
-  padding: 8%;
+/*search-rooms*/
+.search-rooms {
+  background: #ffffff;
+  margin-top: 7%;
+  margin-bottom: 25%;
+  padding: 7.8%;
+  padding-top: 10.5%;
+  box-sizing: border-box;
 
-  background: url('../img/main-background.jpg') no-repeat;
-  background-size: cover;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
 }
 
-.main-page__slogan {
-  margin-top: 50px;
-  margin-bottom: 0;
-  font-family: 'Montserrat', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
+.search-rooms__select-visitors {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
 
+.select-visitors__input {
+  margin-top: 5px;
+  background: url('../img/sprite.png') no-repeat;
+  background-position: 114% -451px;
+}
+
+.search-rooms__link {
+  display: block;
+  position: relative;
   text-align: center;
+  text-decoration: none;
+  padding: 14px 0;
+  width: 100%;
+  @include general-style-font();
+  color: #ffffff;
+
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 22px;
+}
+
+.search-rooms__link:active {
+  opacity: 0.5;
+}
+
+.search-rooms__link::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: -2px;
+  right: 16px;
+  width: 33px;
+  height: 33px;
+  background: url('../img/sprite.png') no-repeat;
+  background-position: 0 0;
+}
+
+@media (min-width: 450px) {
+  .search-rooms {
+    width: 380px;
+    margin-top: 4.8%;
+    margin-bottom: 26.8%;
+    padding: 30px;
+    padding-top: 40px;
+  }
+}
+
+@media (min-width: 615px) {
+  .search-rooms {
+    margin-left: 2.7%; // 9.7
+  }
+}
+
+.search-rooms__title {
+  @include style-font-for-title();
+  font-size: 20px;
+  line-height: 28px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@media (min-width: 615px) {
+  .search-rooms__title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .search-rooms {
+    margin-top: 5.8%;
+    margin-left: 3%;
+    margin-bottom: 25.5%;
+  }
+
+    .select-visitors__input {
+    padding: 8px 0;
+  }
+
+  .search-rooms__link {
+    margin-top: 30px;
+  }
+}
+/*search-rooms*/
+
+.date-picker__label {
+  display: block;
+  margin-top: 20px;
+  @include general-style-font();
+  color: #1F2041;
+}
+
+.date-picker__input {
+  display: block;
+  margin-top: 5px;
+
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 9px 15px;
   color: rgba(31, 32, 65, 0.75);
+
+  background: url('../img/sprite.png') no-repeat;
+  background-position: 145% -454px;
+
+  font-family: $general-font;
+  font-size: 14px;
+}
+ 
+@media (min-width: 450px) {
+  .date-picker {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .date-picker__input {
+    width: 150px;
+  }
 }
 
-@media (min-width: 550px) {
-  .main-page {
-    padding-bottom: 2%;
+@media (min-width: 1440px) {
+  .date-picker__label {
+    margin-top: 18px;
   }
 
-  .main-page__slogan {
-    text-align: right;
+  .date-picker__input {
+    margin-top: 6px;
+    padding: 14px 15px;
   }
 }
-*/
-/*@media (min-width: 800px) {
-  .main-page {
-    padding-left: 16%;
-    padding-right: 16%; 
-  }
-}*/
